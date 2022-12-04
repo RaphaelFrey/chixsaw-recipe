@@ -1,5 +1,6 @@
 package com.chixsaw.chixsawrecipe.services;
 
+import com.chixsaw.chixsawrecipe.commands.RecipeCommand;
 import com.chixsaw.chixsawrecipe.domain.Recipe;
 
 import java.util.Set;
@@ -10,4 +11,6 @@ import java.util.Set;
 public interface RecipeService {
 
     Set<Recipe> getRecipes();
+    Recipe findById(Long id);
+    RecipeCommand saveRecipeCommand(RecipeCommand recipeCommand);
 }
